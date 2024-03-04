@@ -1,0 +1,121 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff00;
+  background-color: #000000;
+  background-image: radial-gradient(circle, #333333 1px, transparent 1px),
+                    radial-gradient(circle, #333333 1px, #000000 1px);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 960px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  color: #ff00ff;
+}
+
+.game-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header-image {
+  flex-shrink: 0;
+  max-width: 100%; /* Ensure image responsiveness */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.game-info, .score-submission, .high-scores {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.game-info {
+  max-width: 100%; /* Allow it to fill the container on smaller screens */
+}
+
+/* High Scores specific styles */
+.high-scores {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li img {
+  margin-left: 10px;
+}
+
+a {
+  color: #FFFF00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .game-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container, .game-info, .score-submission, .high-scores {
+    width: 90%;
+    max-width: none; /* Remove the max-width on smaller screens */
+  }
+
+  header, .container, .game-info, .score-submission, .high-scores {
+    padding: 10px;
+  }
+
+  /* Adjust form input sizes for easier interaction on mobile */
+  #scoreForm input[type="text"],
+  #scoreForm input[type="number"],
+  #scoreForm button {
+    width: 100%; /* Make form elements full width */
+    margin-top: 5px;
+  }
+}

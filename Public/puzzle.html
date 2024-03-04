@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Amateur Puzzle Champion of Burlington, MA</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0000ff; /* Bright blue background */
+            color: #00ff00; /* Neon green text */
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/black-thread-light.png');
+        }
+        .header {
+            background-color: #ff00ff; /* Magenta */
+            color: #ffff00; /* Yellow text */
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            text-shadow: 2px 2px #000000;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        .content {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border: 5px dashed #ff0000; /* Red dashed border */
+            border-radius: 0; /* Remove rounded corners for authenticity */
+            box-shadow: none; /* Remove shadow */
+        }
+        marquee {
+            font-size: larger;
+            font-weight: bold;
+            color: #ffffff;
+        }
+    </style>
+    <script>
+        function displayRandomVisitorCount() {
+            var count = Math.floor(Math.random() * 3000) + 1;
+            document.getElementById('visitorCount').textContent = count;
+        }
+    </script>
+</head>
+<body onload="displayRandomVisitorCount()">
+    <div class="header">
+        National Amateur Puzzle Champion of Burlington, MA
+    </div>
+    <marquee>Congrats!!! Congrats!!!Congrats!!!Congrats!!!Congrats!!!Congrats!!!Congrats!!!Congrats!!!Congrats!!!Congrats!!!Congrats!!!Congrats!!!Congrats!!!Congrats!!!In the serene town of Burlington, where the mist hung low over the tranquil streets and the old Victorian houses whispered tales of bygone eras, there resided the Drew family, renowned for their unwavering love for puzzles. Eleanor and Thomas Drew, along with their son Drew, were the puzzle-solving prodigies of Burlington, their passion for unraveling enigmatic mysteries a source of fascination for all who knew them.
+
+One fateful evening, as the moon cast an eerie glow over the cobblestone streets, an enigmatic invitation bearing the emblem of the Puzzle Master arrived at the Drew family's doorstep. It beckoned them to participate in the annual Puzzle Competition, a clandestine event steeped in secrecy and allure. Intrigued by the challenge and eager to put their skills to the test, the Drews accepted the invitation without hesitation.
+
+The night of the competition arrived, shrouded in an aura of anticipation and intrigue. The Drew family found themselves at a grand mansion on the outskirts of Burlington, surrounded by a diverse array of competitors from all walks of life, each harboring their own secrets and ambitions.
+
+As the competition unfolded, the challenges grew increasingly complex and perilous. Riddles whispered on the wind, puzzles that seemed to defy logic, and traps lurking in the shadows tested the mettle of the contestants. Yet, the Drew family remained steadfast, their collective intellect and unyielding determination serving as their most potent assets.</marquee>
+    <div class="content">
+        <img src="drew.gif" alt="Drew" style="width: 400px; height: auto;">
+		<img src="drewfam.jpg" alt="The Drew Family" style="width: 525px; height: auto;">
+        <p>Visits: <span id="visitorCount">0</span></p>
+        <p><a href="https://en.wikipedia.org/wiki/Jigsaw_puzzle" style="color: #FF00FF; text-decoration: none;">Click here for more!</a></p>
+    </div>
+    <hr>
+    <footer>
+        <p style="color:#00FFFF;">Last updated in 19%$^$%#^</p>
+    </footer>
+</body>
+</html>

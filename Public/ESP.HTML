@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered and Larger Image Display</title>
+<style>
+  /* This CSS centers the img within the body of the page and attempts to make it larger */
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Light grey background */
+  }
+
+  img {
+    /* Remove max-width and max-height and set specific dimensions */
+    width: 60%; /* Adjust this value to make the image larger or smaller */
+    height: auto; /* This maintains the image's aspect ratio */
+    object-fit: contain;
+  }
+</style>
+</head>
+<body>
+
+<img src="esp.png" alt="Centered and Larger Image">
+
+</body>
+</html>

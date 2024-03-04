@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of the Week</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Placeholder for dynamically loaded navigation -->
+    <nav id="navbar-placeholder"></nav>
+
+   <header>
+    <h1>Game of the Week</h1>
+    <div class="game-content">
+        <img src="hydro/hydro_box.jpg" alt="Hydro Thunder for Nintendo 64" class="header-image" style="max-width:50%;height:auto;">
+        <section class="game-info">
+            <h2>Hydro Thunder (2000)</h2>
+            <p>"Hydro Thunder" is a high-speed boat racing video game developed by Midway Games. Originally released in arcades in 1999, it was later ported to various gaming consoles, including the Nintendo 64. In the game, players race high-powered speedboats through various exotic locations, navigating treacherous waters and performing stunts to gain boosts. With its fast-paced gameplay, colorful graphics, and exhilarating courses, "Hydro Thunder" became a popular title among racing game enthusiasts.</p>
+        </section>
+    </div>
+</header>
+
+
+
+    <script>
+        // Script to dynamically load the navigation bar from 'navbar.html'
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the navbar:', error));
+        });
+    </script>
+	
+		<script>
+    // Script to dynamically load the "Previous Game of the Weeks" section
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('previous-games.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('previous-games-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the previous games section:', error));
+    });
+</script>
+	
+	
+	
+	
+    <script src="script.js"></script>
+</body>
+</html>

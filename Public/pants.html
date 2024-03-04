@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Pants</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            text-align: center;
+            margin-top: 20px;
+            position: relative; /* Set body position to relative */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .bottom-left {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Placeholder for the navigation bar -->
+    <div id="navbar-placeholder"></div>
+
+    <h1>Latest Pants</h1>
+    <img src="pants.jpg" alt="Latest pants image" width="800">
+
+    <!-- Container for the image at bottom left -->
+    <div class="bottom-left">
+        <a href="pantsvid.html" target="_blank"> <!-- Attribute target="_blank" added -->
+            <img src="pantscomp.jpg" alt="Complementary pants image" width="200">
+        </a>
+    </div>
+
+    <!-- JavaScript to load the navigation bar -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    });
+    </script>
+</body>
+</html>

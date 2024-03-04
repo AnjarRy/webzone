@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goof Troop Scores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar-placeholder"></nav>
+
+    <header>
+        <h1>Goof Troop Scores</h1>
+        <div class="game-content">
+            <img src="goof-troop.jpg" alt="Goof Troop for SNES" class="header-image" style="max-width:100%;height:auto;">
+            <section class="game-info">
+                <h2>Goof Troop (1993)</h2>
+                <p>Released for the SNES in 1993, Goof Troop is an action-adventure game that captured the hearts of many...</p>
+            </section>
+        </div>
+    </header>
+
+    <!-- Removed sections related to high score submission and display -->
+
+    <div id="previous-games-placeholder"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the navbar:', error));
+        });
+    </script>
+
+    <script src="goof-troop.js"></script> <!-- Make sure to update or remove this if not needed -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('previous-games.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('previous-games-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the previous games section:', error));
+        });
+    </script>
+</body>
+</html>
